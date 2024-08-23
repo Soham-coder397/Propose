@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    width: 60px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 85px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    top: 10px;
+  }
+
+#back{
+    width: 60px;
+    height: 80px;
+    background: linear-gradient(red,blue);
+    position: absolute;
+    top: 0;
+    left: 208px;
+    z-index: -1;
+    animation: text 4s infinite;
+  }
+
+  @keyframes text {
+    0% {
+         position: absolute;
+         top: 0px;
+        }
+    100%{
+          position: absolute;
+          top: 800px;
+        }
+  }
